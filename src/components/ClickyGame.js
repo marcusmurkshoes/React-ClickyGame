@@ -5,7 +5,7 @@ import React from 'react';
 const ClickyGame = props => 
 
 
-	 {
+	 (
 
 		<div className="card">
   <img className="card-img-top" src={props.image} alt="altt" onClick={this.handleIncrement} />
@@ -19,7 +19,7 @@ const ClickyGame = props =>
 </div>
 
 
-		};
+		);
 
 
 export default ClickyGame;

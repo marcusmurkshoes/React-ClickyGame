@@ -17,6 +17,7 @@ picture: []
  handleIncrement = () => {
 
   	this.setState({ score: this.state.score + 1});
+    console.log(this.state.sore);
   };
 
 
@@ -30,6 +31,7 @@ picture: []
 {this.state.users.map(users => (<ClickyGame name={users.name}
             image={users.image}
             score={this.state.score}
+            key={users.id}
             handleIncrement={this.handleIncrement}
             occupation={users.occupation}/>))}
 
